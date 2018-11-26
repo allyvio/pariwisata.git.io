@@ -1,7 +1,7 @@
 body {
 	background-color 	: #c0c0c0;
 	text-align			: center;
-	font-family			: Verdana, Tahoma, Helvetica;
+	font-family			: "Verdana", "Tahoma", "Helvetica", sans-serif;
 	font-size			: 12px;
 }
 
@@ -211,6 +211,11 @@ body {
 .kolom2 {
 	width				: 80%;
 }
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
 
 #footer{
 	width 				: 100%;
@@ -224,3 +229,10 @@ body {
 	position			: relative;
 	clear				: both;
 }
+
+@media screen and (max-width:900px) {
+  #layout{
+    width:100%; 
+  }
+}
+	
